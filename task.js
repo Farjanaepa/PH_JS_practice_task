@@ -27,6 +27,28 @@ if ( bmi < 30 ) {
     }
 
 } else {
-    
+
     console.log('you are obese');
 }
+
+
+// grade calculator
+
+let number = 80;
+
+if (number >= 90) {
+    console.log('Grade - A');
+
+}else if (number >=80){
+
+        console.log("grade - B");
+}else if (number >=70){
+
+        console.log("grade - C");
+}else if (number >=60){
+
+        console.log("grade - D");
+}else{
+
+        console.log("You are fail");
+    }
