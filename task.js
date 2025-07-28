@@ -5,3 +5,28 @@ if (burger > 500) {
 } else {
     console.log('coke : 30 tk');
 }
+
+// BMI calculation
+
+let w = 35;
+let h = 1.52;
+let bmi = w / ( h * h );
+
+if ( bmi < 30 ) {
+    if ( bmi < 18.5 ){
+
+        console.log('You are Underweight');
+
+    }else if ( bmi >= 18.5 && bmi <= 24.9) {
+
+        console.log('you are normal');
+
+    } else if( bmi >= 25 && bmi <= 29.9 ){
+        
+        console.log('you are overweight');
+    }
+
+} else {
+    
+    console.log('you are obese');
+}
