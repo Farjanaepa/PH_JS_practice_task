@@ -98,3 +98,32 @@ if (number >= 90) {
     let results = (nub1 > nub2) ? nub1*2 : nub1 + nub2;
     console.log("Results :" ,results); 
     
+// bus ticket calculation
+let busfare = 500;
+let age = 25;
+let isStudent = true;
+
+if (age<10) {
+    busfare = 0;
+} else if(age >= 60){
+    busfare = busfare * 85 /100;
+}
+else if (isStudent) {
+    busfare = busfare * 50 /100;
+}
+
+console.log("Ticket :", busfare);
+
+
+// ternary
+
+let busfaree = 500;
+let agee = 65;
+let isStudents = true;
+
+let busfar = (agee < 10) ? 0 
+: (age >= 60) ?busfaree * 85 /100
+    : (isStudent === true) ? busfaree * 50 /100 
+    :busfaree;
+
+    console.log(" fare :" , busfar);
