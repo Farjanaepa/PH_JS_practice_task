@@ -52,3 +52,26 @@ if (number >= 90) {
 
         console.log("You are fail");
     }
+
+
+    // Nested friend
+
+    let mymark = 80;
+    let friendmark = 70;
+
+    if (mymark >= 80) {
+        if (friendmark >= 80) {
+            console.log("Go for lunch");
+        } else if (friendmark >= 60) {
+            console.log("Better luck next time");
+            
+        }else if(friendmark < 60 && friendmark >= 40){
+            console.log("Messsage unseen");
+
+        } else if (friendmark < 40){
+            console.log("Block him");
+            
+        }
+    } else {
+        console.log("go to home and sleep and act sad");
+    }
