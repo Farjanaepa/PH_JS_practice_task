@@ -75,3 +75,26 @@ if (number >= 90) {
     } else {
         console.log("go to home and sleep and act sad");
     }
+
+    // ternary numbers
+
+    let num1 = 54;
+    let num2 = 12;
+
+    let result ;
+
+    if (num1 > num2 ) {
+        result = num1 * 2;
+    } else {
+       result = num1 + num2; 
+    }
+
+    console.log("Result :" , result);
+
+    // ternary
+    let nub1 = 54;
+    let nub2 = 12;
+
+    let results = (nub1 > nub2) ? nub1*2 : nub1 + nub2;
+    console.log("Results :" ,results); 
+    
