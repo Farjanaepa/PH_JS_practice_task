@@ -130,7 +130,8 @@ let busfar = (agee < 10) ? 0
 
 
     
-// Loop task start
+// Loop task start 
+// for loop while loop
 
 // while loop
 
