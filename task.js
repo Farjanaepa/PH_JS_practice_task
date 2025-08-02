@@ -344,3 +344,21 @@ if (books.includes('javascript')) {
     console.log("not in the book list");
     
 }
+
+// 4 checking if its an array
+
+let classes =['one','two' ,'three'];
+let sub = "['java','css']";
+let name = 'safoan';
+
+console.log(Array.isArray(classes));
+console.log(Array.isArray(sub));
+console.log(Array.isArray(name));
+
+
+// 5 combining Array
+
+let names = ['rafia','tuhin','shahin'];
+let morenames = ['raju','shakil','fahmida'];
+
+console.log(names.concat(morenames));
