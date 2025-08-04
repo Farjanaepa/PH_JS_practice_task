@@ -19,3 +19,10 @@ const devideresult=vagermatchine(25,125);
 console.log(devideresult);
 
 
+function biyogmatchine(x,y) {
+    let result=x-y;
+    console.log("Biyog = "+ result);
+    return result;
+}
+const biyog=biyogmatchine(30,20);
+console.log(biyog);
