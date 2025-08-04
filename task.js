@@ -362,3 +362,73 @@ let names = ['rafia','tuhin','shahin'];
 let morenames = ['raju','shakil','fahmida'];
 
 console.log(names.concat(morenames));
+
+// string task
+
+// Count how many times a string has the letter a
+
+let str='FarjanaEpA';
+console.log(str.toLowerCase().split('a').length-1);
+
+
+
+
+
+
+// object task
+// Access the golden rod color value in output.
+
+const colors = {
+    red: "#ff0000",
+    green: "#00ff00",
+    blue: "#0000ff",
+    "golden rod": '#daa520'
+};
+console.log(colors['golden rod']);
+
+// For this object below add a property named passenger capacity with value 5
+
+const car = {
+    make: "Toyota",
+    model: "Corolla",
+    year: 2020
+};
+car['passenger capacity'] = 5;
+console.log(car);
+
+// Display the physics marks as output.\
+const student = {
+    name: "Hamim Sakep",
+    id: 5421,
+    physics: {
+        subject: "HSC Physics",
+        author: "Shahjahan Tapan",
+        marks: 30
+    }
+};
+
+console.log(student.physics.marks);
+
+// Count the number of properties.
+let students = {
+    name: 'Ariana Grande',
+    age: 21,
+    city: 'Gaibandha',
+    isStudent: true
+};
+const key=Object.keys(students);
+console.log(key.length);
+
+// Loop through an object and print the key-value pairs with their types
+
+const myObject = {
+
+name: 'John Doe',
+age: 25,
+city: 'Example City',
+isStudent: true
+};
+for(const prop in myObject){
+    
+    console.log("key :", prop,'|',"type :", typeof myObject[prop]);
+}
