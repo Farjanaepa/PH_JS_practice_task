@@ -26,3 +26,6 @@ function biyogmatchine(x,y) {
 }
 const biyog=biyogmatchine(30,20);
 console.log(biyog);
+
+// jog
+
