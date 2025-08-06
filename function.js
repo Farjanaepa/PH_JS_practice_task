@@ -1,3 +1,4 @@
+// gun. 
 function gunerMatchine(input1,input2) {
     let multiplication=input1*input2;
     console.log("multiple = " + multiplication);
@@ -18,7 +19,7 @@ function vagermatchine(a,b) {
 const devideresult=vagermatchine(25,125);
 console.log(devideresult);
 
-
+// biyog
 function biyogmatchine(x,y) {
     let result=x-y;
     console.log("Biyog = "+ result);
