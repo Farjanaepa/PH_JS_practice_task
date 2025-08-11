@@ -1,4 +1,4 @@
-// repeated array
+//Task -2 : repeated array
 const numbers = [5,6,11,12,98, 5]
 function repeatedArray(number){
     let count = 0;
@@ -13,7 +13,7 @@ const result = repeatedArray(numbers);
 console.log(result);
 
 
-//Task -2 : Write a function to count the number of vowels in a string.
+//Task -3 : Write a function to count the number of vowels in a string.
 const sentences = "I am a voulentier";
 function vowelCheck(sentence){
     let v = 0;

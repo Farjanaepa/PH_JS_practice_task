@@ -5,7 +5,7 @@ function temperature(celcious){
 
 }
 
-// farenheight to celcious
+// Task -1 : farenheight to celcious
 function temperature2(farenheight){
     const celcious = (farenheight - 32) * 5/9;
     return celcious;
