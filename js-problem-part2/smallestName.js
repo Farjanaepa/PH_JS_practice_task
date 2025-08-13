@@ -2,21 +2,21 @@
 
 const heights2 = ['rahim', 'robin', 'rafi', 'ron', 'rashed'];
 
-// function smallestName(names){
+ function smallestName(names){
 
-//     let nam=names[0];
+    let nam=names[0];
 
-//     for(const name of names){
-//         if (name.length < nam.length) {
-//             nam = name;
+    for(const name of names){
+         if (name.length < nam.length) {
+             nam = name;
             
-//         }
-//     }
-//     return nam;
+       }
+    }
+    return nam;
 
-// }
-// const smallname= smallestName(heights2);
-// console.log(smallname);
+ }
+ const smallname= smallestName(heights2);
+ console.log(smallname);
 
 function smallName(names){
 
