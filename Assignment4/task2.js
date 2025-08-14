@@ -15,5 +15,5 @@ function  onlyCharacter( str ) {
 
 
 }
-const result = onlyCharacter(true);
+const result = onlyCharacter({});
 console.log(result);
