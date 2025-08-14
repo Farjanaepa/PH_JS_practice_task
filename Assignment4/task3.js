@@ -2,7 +2,7 @@ function  bestTeam( player1, player2 ) {
       // You have to write your code here
    
      
-    if(typeof player1 !== "object" || typeof player2 !== "object") {
+    if(typeof player1 !== "object" || player1 === null || typeof player2 !== "object" || player2 === null) {
         return "invalid"
     }
     
