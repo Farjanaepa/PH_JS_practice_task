@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event</title>
+    <style>
+        .comment{
+            border: 2px solid blue;
+            background-color: azure;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
 
@@ -13,22 +22,47 @@
     <input id="input-name" placeholder="your name" type="text">
     <button id="btn-update">Update</button>
 
+
+    <!-- comment box -->
+
+    <h1>my comment box</h1>
+    <div id="comment-container">
+
+    
+    <p class="comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat laudantium corrupti, possimus et aliquam laborum similique ex ea libero repellendus, omnis voluptatem eius dolore dolores, distinctio perferendis ipsa cupiditate! Quos.</p>
+    <p class="comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat laudantium corrupti, possimus et aliquam laborum similique ex ea libero repellendus, omnis voluptatem eius dolore dolores, distinctio perferendis ipsa cupiditate! Quos.</p>
+    <p class="comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat laudantium corrupti, possimus et aliquam laborum similique ex ea libero repellendus, omnis voluptatem eius dolore dolores, distinctio perferendis ipsa cupiditate! Quos.</p>
+    <p class="comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat laudantium corrupti, possimus et aliquam laborum similique ex ea libero repellendus, omnis voluptatem eius dolore dolores, distinctio perferendis ipsa cupiditate! Quos.</p>
+    </div>
+
+    <!-- <form action=""> -->
+        <textarea name="" id="comment-text-box" cols="30" rows="10"></textarea>
+        <br>
+        <button id="btn-post-comment">Post Comment</button>
+    <!-- </form> -->
     <script>
-        // set event listener
-        document.getElementById('btn-update').addEventListener('click',function(){
-            console.log('update button clicked');
+        // step 1 : set a event handler
+        document.getElementById('btn-post-comment')
+        .addEventListener('click',function(){
 
-            // get the text from input field
-            const nameInput = document.getElementById('input-name');
-            console.log(nameInput)
-            const name = nameInput.value;
-            console.log('name', name)
+            //2 get the text in the comment
+            const commentTextBox = document.getElementById('comment-text-box');
+            const newComment = commentTextBox.value;
+            //3 get the parent node where to publish
+            const commentContainer = document.getElementById('comment-container')
 
+            // 4 create a comment p and set
+            const commentElement = document.createElement('p');
+            commentElement.classList.add('comment');
+            commentElement.innerText=newComment;
 
-            // set the name
-            const namep = document.getElementById('name');
-            namep.innerText = name;
+            // 5 append the new p tag to the parent
+            commentContainer.appendChild(commentElement);
+
+            // clean the text area
+            commentTextBox.value='';
         })
+        
     </script>
     <script src="./event.js"></script>
     
