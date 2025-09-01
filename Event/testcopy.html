@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="text">Hello World</p>
+<button onclick="copyText()">Copy</button>
+
+<script>
+    
+function copyText() {
+  // get the text
+  let text = document.getElementById("text").innerText;
+
+  // create temporary input
+  let input = document.createElement("input");
+  input.value = text;
+  document.body.appendChild(input);
+
+  // select and copy
+  input.select();
+  document.execCommand("copy");
+
+  // remove temporary input
+  document.body.removeChild(input);
+
+  alert("Copied: " + text);
+}
+</script>
+
+</body>
+</html>
